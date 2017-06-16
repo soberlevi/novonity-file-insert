@@ -1,13 +1,13 @@
 {
-  "name": "novonity-file-replace",
+  "name": "novonity-file-insert",
   "version": "1.0.5",
-  "description": "file-replace",
-  "main": "file-replace.js",
+  "description": "file-insert",
+  "main": "file-insert.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "replace",
+    "insert",
     "string",
     "to",
     "file"

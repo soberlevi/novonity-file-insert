@@ -1,24 +1,21 @@
 #!/usr/bin/env node
 
-let fileReplace = require('./file-replace');
+let fileInsert = require('../');
 let minimist = require('minimist');
 let argv = minimist(process.argv.slice(2), {
     boolean: ['r']
 });
-console.log("1111:" + JSON.stringify(argv));
+let line = argv.l;
 let file = argv.f;
-let patterns = argv.p;
+let content = argv.c;
 let replace = argv.r;
-// console.log("before:" + patterns);
 if (replace) {
-    patterns = patterns.replace(/'/g, "\"");
+    content = content.replace(/'/g, "\"");
 }
 
-// console.log("after:" + patterns);
-
 (function exec() {
-    fileReplace(file, patterns, callback);
-    function callback(err) {
+    fileInsert(file, line, content, callback);
+    function callback (err) {
         if (err) {
             console.error(err.message);
             process.exit(1);
