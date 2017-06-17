@@ -2,7 +2,7 @@
 /**
  * Created by soberlevi on 2017/6/17.
  */
-let fileInsert = require('../');
+let fileInsert = require('.');
 let minimist = require('minimist');
 let argv = minimist(process.argv.slice(2), {
     boolean: ['r']

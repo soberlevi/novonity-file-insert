@@ -1,6 +1,6 @@
 {
   "name": "novonity-file-insert",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "file-insert",
   "main": "file-insert.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "url": "https://github.com/soberlevi/novonity-file-insert"
   },
   "author": "soberlevi",
-  "bin": "./bin.js",
+  "bin": "cmd.js",
   "license": "ISC",
   "dependencies": {
     "minimist": "^1.2.0"
