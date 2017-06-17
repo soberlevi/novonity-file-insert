@@ -1,6 +1,6 @@
 {
   "name": "novonity-file-insert",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "file-insert",
   "main": "file-insert.js",
   "scripts": {
